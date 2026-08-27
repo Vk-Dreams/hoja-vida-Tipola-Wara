@@ -13,69 +13,69 @@ Etiquetas HTML5 Utilizadas
 El documento aplica de manera rigurosa la semántica textual y estructural del estándar HTML5:
 
 # 1. Estructura y Secciones
-<header>: Encabezado principal del documento que aloja la foto de perfil, datos de contacto primarios y el menú de navegación principal.
+header: Encabezado principal del documento que aloja la foto de perfil, datos de contacto primarios y el menú de navegación principal.
 
-<nav>: Bloques de navegación interna (en el encabezado, menú secundario de acceso rápido en la barra lateral y navegación de retorno en el pie de página).
+nav: Bloques de navegación interna (en el encabezado, menú secundario de acceso rápido en la barra lateral y navegación de retorno en el pie de página).
 
-<main>: Contenedor principal del contenido de la hoja de vida.
+main: Contenedor principal del contenido de la hoja de vida.
 
-<section>: Delimitador semántico para cada módulo temático (Perfil, Educación, Experiencia, Habilidades, Certificaciones, Idiomas, Proyectos, Multimedia y Contacto).
+section: Delimitador semántico para cada módulo temático (Perfil, Educación, Experiencia, Habilidades, Certificaciones, Idiomas, Proyectos, Multimedia y Contacto).
 
-<article>: Representación independiente de cada título académico, experiencia laboral o proyecto individual.
+article: Representación independiente de cada título académico, experiencia laboral o proyecto individual.
 
-<aside>: Barra lateral con datos generales de contexto (documento de identidad, disponibilidad y accesos rápidos).
+aside: Barra lateral con datos generales de contexto (documento de identidad, disponibilidad y accesos rápidos).
 
-<footer>: Pie de página con derechos de autor y enlaces de retorno.
+footer: Pie de página con derechos de autor y enlaces de retorno.
 
 # 2. Texto y Jerarquía
-<h1>, <h2>, <h3>: Organización jerárquica de encabezados y títulos.
+h1, h2, h3: Organización jerárquica de encabezados y títulos.
 
-<p>: Párrafos de texto.
+p: Párrafos de texto.
 
-<address>: Información de contacto y dirección física/digital.
+address: Información de contacto y dirección física/digital.
 
-<strong>: Enfasis fuerte (importancia semántica) para términos y conceptos clave.
+strong: Enfasis fuerte (importancia semántica) para términos y conceptos clave.
 
-<em>: Énfasis de tono/estilo en texto relevante.
+em: Énfasis de tono/estilo en texto relevante.
 
-<mark>: Resaltado visual/semántico de palabras clave.
+mark: Resaltado visual/semántico de palabras clave.
 
-<small>: Texto secundario o avisos legales.
+small: Texto secundario o avisos legales.
 
-<time>: Marcar fechas y rangos temporales específicos mediante el atributo datetime (YYYY o YYYY-MM).
+time: Marcar fechas y rangos temporales específicos mediante el atributo datetime (YYYY o YYYY-MM).
 
 # 3. Listas y Tablas
-<ul>, <ol>, <li>: Listas ordenadas y desordenadas para habilidades, herramientas y certificaciones.
+ul, ol, li: Listas ordenadas y desordenadas para habilidades, herramientas y certificaciones.
 
-<table>, <caption>, <thead>, <tbody>, <tr>, <th>, <td>: Estructura semántica completa para la tabla de dominio lingüístico, incorporando el alcance (scope="col" y scope="row").
+table, caption, thead, tbody, tr, th, td: Estructura semántica completa para la tabla de dominio lingüístico, incorporando el alcance (scope="col" y scope="row").
 
 # 4. Elementos Interactivos y Medición
-<meter>: Medidor de nivel de dominio nativo para lenguajes de programación y tecnologías.
+meter: Medidor de nivel de dominio nativo para lenguajes de programación y tecnologías.
 
-<progress>: Indicador de avance y porcentaje de finalización de proyectos y programas académicos.
+progress: Indicador de avance y porcentaje de finalización de proyectos y programas académicos.
 
 # 5. Elementos Multimedia
-<figure> y <figcaption>: Envoltorio para imágenes y componentes multimedia con sus respectivas leyendas explicativas.
+figure y figcaption: Envoltorio para imágenes y componentes multimedia con sus respectivas leyendas explicativas.
 
-<audio> y <source>: Reproducción de audio nativo con controles para presentación profesional.
+audio y source: Reproducción de audio nativo con controles para presentación profesional.
 
-<video>, <source> y <track>: Reproducción de video nativo.
+video, source y track: Reproducción de video nativo.
 
 # 6. Formularios Nativo
-<form>, <fieldset>, <legend>, <label>: Agrupamiento y etiquetado claro de campos de entrada.
+form, fieldset, legend, label: Agrupamiento y etiquetado claro de campos de entrada.
 
-<input>: Tipos nativos text, email, tel, checkbox.
+input: Tipos nativos text, email, tel, checkbox.
 
-<select> y <option>: Menú desplegable para selección de motivo de contacto.
+select y option: Menú desplegable para selección de motivo de contacto.
 
-<textarea>: Campo de entrada multilinea para el mensaje.
+textarea: Campo de entrada multilinea para el mensaje.
 
-<button>: Botones semánticos con tipos submit y reset.
+button: Botones semánticos con tipos submit y reset.
 
 # Elementos de Accesibilidad Implementados (A11y)
 Para asegurar un diseño universal e inclusivo, se han integrado las siguientes prácticas:
 
-Atributo de idioma: Configuración explícita lang="es" en el elemento raíz <html>.
+Atributo de idioma: Configuración explícita lang="es" en el elemento raíz html.
 
 Navegación por teclado y atajos:
 
@@ -83,9 +83,9 @@ Enlace "Saltar al contenido principal" al inicio del documento para evitar la na
 
 Uso de anclas internas (#id) mediante elementos <nav> para facilitar el desplazamiento directo por el documento.
 
-Jerarquía de Encabezados: Estructura secuencial sin saltos sintácticos (<h1> -> <h2> -> <h3>).
+Jerarquía de Encabezados: Estructura secuencial sin saltos sintácticos (h1 -> h2 -> h3).
 
-Asociación Formulario-Label: Todos los controles de entrada (<input>, <select>, <textarea>, <progress>) están asociados explícitamente con su respectiva etiqueta <label> usando el atributo for / id.
+Asociación Formulario-Label: Todos los controles de entrada (input, select, textarea, progress) están asociados explícitamente con su respectiva etiqueta label usando el atributo for / id.
 
 # Textos Alternativos:
 
