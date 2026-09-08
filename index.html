@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de Vida - Wara Alexandra Tipola Beltrán</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <a href="#contenido-principal" aria-label="Saltar al contenido principal">Saltar al contenido principal</a>
 
-    <header>
-        <img src="assets/images/foto_wara01.jpg" alt="foto personal" width="150px">
-        
-        <h1>Wara Alexandra Tipola Beltrán</h1>
+    <header class="site-header">
+        <div class="site-header__identity">
+            <img class="avatar" src="assets/images/foto_wara01.jpg" alt="foto personal">
 
-        <p>Estudiante de Ingeniería de Sistemas</p>
+            <div class="site-header__text">
+                <h1>Wara Alexandra Tipola Beltrán</h1>
+                <p class="role">Estudiante de Ingeniería de Sistemas</p>
 
-        <address>
-            Alto Obrajes calle Jorge Rouma, La Paz, Bolivia<br>
-            <a href="mailto:wtipola@gmail.com">wtipola@gmail.com</a><br>
-            <a href="tel:+59168008601">+591 68008601</a>
-        </address>
+                <address>
+                    Alto Obrajes calle Jorge Rouma, La Paz, Bolivia<br>
+                    <a href="mailto:wtipola@gmail.com">wtipola@gmail.com</a><br>
+                    <a href="tel:+59168008601">+591 68008601</a>
+                </address>
+            </div>
+        </div>
 
-        <nav aria-label="Navegación principal">
+        <nav class="main-nav" aria-label="Navegación principal">
             <ul>
                 <li><a href="#perfil">Perfil Profesional</a></li>
                 <li><a href="#educacion">Formación Académica</a></li>
@@ -37,7 +46,7 @@
         </nav>
     </header>
 
-    <aside>
+    <aside class="sidebar">
         <h3>Información General</h3>
         <p><small>Documento de Identidad: 9972146 LP</small></p>
         <p><small>Disponibilidad: Inmediata</small></p>
@@ -61,7 +70,7 @@
         <section id="educacion">
             <h2>Formación Académica</h2>
 
-            <article>
+            <article class="timeline-item">
                 <h3>Ingeniería de Sistemas</h3>
                 <p>Universidad Católica Boliviana San Pablo</p>
                 <time datetime="2025">2025</time> - <time datetime="2026">Presente</time>
@@ -72,7 +81,7 @@
                 </p>
             </article>
 
-            <article>
+            <article class="timeline-item">
                 <h3>Técnico Medio en Sistemas Informáticos</h3>
                 <p>Unidad Educativa Amerinst, La Paz, Bolivia</p>
                 <time datetime="2022">2022</time> - <time datetime="2024">2024</time>
@@ -83,7 +92,7 @@
                 </p>
             </article>
 
-            <article>
+            <article class="timeline-item">
                 <h3>Bachillerato en Humanidades</h3>
                 <p>Unidad Educativa Amerinst, La Paz, Bolivia</p>
                 <time datetime="2019">2019</time> - <time datetime="2024">2024</time>
@@ -98,7 +107,7 @@
         <section id="experiencia">
             <h2>Experiencia Profesional</h2>
 
-            <article>
+            <article class="timeline-item">
                 <h3>Ayudante Universitaria (Teaching Assistant)</h3>
                 <p>Universidad Católica Boliviana San Pablo</p>
                 <p>Periodo: <time datetime="2026-02">Febrero 2026</time> - <time datetime="2026-11">Noviembre 2026</time></p>
@@ -106,7 +115,7 @@
                 <p><strong>Principales logros:</strong> Optimización de la dinámica del laboratorio y mejora sustancial en la comprensión conceptual de los estudiantes.</p>
             </article>
 
-            <article>
+            <article class="timeline-item">
                 <h3>Asesora de Ventas y Atención al Cliente</h3>
                 <p>Servicios Comerciales Independientes, La Paz</p>
                 <p>Periodo: <time datetime="2026-07">Julio 2026</time> - <time datetime="2026-08">Agosto 2026</time></p>
@@ -114,7 +123,7 @@
                 <p><strong>Principales logros:</strong> Superación de metas de ventas mensuales en un 15% y establecimiento de un estándar de servicio caracterizado por un trato respetuoso, ágil y personalizado.</p>
             </article>
 
-            <article>
+            <article class="timeline-item">
                 <h3>Tutora de Inglés Virtual</h3>
                 <p>Trabajo Independiente</p>
                 <p>Periodo: <time datetime="2023-03">Marzo 2023</time> - <time datetime="2024-11">Noviembre 2024</time></p>
@@ -126,6 +135,8 @@
         <section id="habilidades">
             <h2>Habilidades Técnicas</h2>
 
+            <div class="skills-grid">
+            <div class="skills-grid__col">
             <h3>Lenguajes y Tecnologías</h3>
             <ul>
                 <li>
@@ -149,7 +160,9 @@
                     <meter min="0" low="3" high="7" max="10" value="7" aria-label="Nivel de SQL">7 de 10</meter>
                 </li>
             </ul>
+            </div>
 
+            <div class="skills-grid__col">
             <h3>Herramientas de Desarrollo</h3>
             <ul>
                 <li>Git y GitHub</li>
@@ -157,12 +170,17 @@
                 <li>Entornos digitales de diseño (Canva, Photoshop)</li>
             </ul>
 
+            </div>
+
+            <div class="skills-grid__col">
             <h3>Habilidades Profesionales (Soft Skills)</h3>
             <ul>
                 <li>Comunicación asertiva e inglés fluido (C1)</li>
                 <li>Trato respetuoso y atención al cliente</li>
                 <li>Liderazgo de equipos y gestión de proyectos</li>
             </ul>
+            </div>
+            </div>
         </section>
 
         <section id="certificaciones">
@@ -181,7 +199,7 @@
 
         <section id="idiomas">
             <h2>Idiomas</h2>
-            <table border="2">
+            <table class="lang-table">
                 <caption>Dominio lingüístico acreditado</caption>
                 <thead>
                     <tr>
@@ -211,7 +229,7 @@
         <section id="proyectos">
         <h2>Proyectos Destacados</h2>
 
-        <article>
+        <article class="project-card">
         <h3>Sistema de Gestión de Billetera Digital</h3>
         <p><strong>Descripción:</strong> Desarrollo de una aplicación de escritorio interactiva con interfaz gráfica (GUI) que simula el funcionamiento de una cuenta financiera personal, permitiendo la gestión de saldo, depósitos, retiros y transferencias entre usuarios con persistencia de datos en archivos binarios (.dat).</p>
         <p><strong>Tecnologías utilizadas:</strong> C++, Dear ImGui, g++ (MinGW-w64), Git, GitHub.</p>
@@ -224,7 +242,7 @@
         
         </article>
 
-        <article>
+        <article class="project-card">
         <h3>Sistema Web para Venta y Compra de Proyectos Inmobiliarios</h3>
         <p><strong>Descripción:</strong> Plataforma web orientada a la difusión y comercialización de proyectos inmobiliarios en Bolivia, facilitando la publicación de inmuebles por parte de empresas y PYMES, así como la consulta y guardado de publicaciones por parte de clientes e inversores.</p>
         <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, JavaScript, PHP, MySQL.</p>
@@ -241,12 +259,13 @@
         <section id="multimedia">
             <h2>Portafolio Multimedia</h2>
 
-            <figure>
+            <div class="media-grid">
+            <figure class="media-item">
                 <img src="assets/images/Imagen1.jpg" alt="captura de pantalla" width="700px">
                 <figcaption>Figura 1: Captura de pantalla de la interfaz del proyecto URBANOVA.</figcaption>
             </figure>
 
-            <figure>
+            <figure class="media-item">
                 <figcaption>Audio de presentación personal y resumen profesional:</figcaption>
                 <audio controls>
                     <source src="assets/audio/Presentación_cv.m4a" type="audio/mpeg">
@@ -254,18 +273,19 @@
                 </audio>
             </figure>
 
-            <figure>
+            <figure class="media-item">
                 <figcaption>Video demostrativo de la plataforma de banco en C++</figcaption>
                 <video controls width="640" height="360">
                     <source src="assets/video/Banco_modular.mp4" type="video/mp4">
                     Tu navegador no soporta el elemento de video HTML5.
                 </video>
             </figure>
+            </div>
         </section>
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <form action="#" method="post">
+            <form class="contact-form" action="#" method="post">
                 <fieldset>
                     <legend>Formulario de mensaje</legend>
 
@@ -315,8 +335,8 @@
 
     </main>
 
-    <footer>
-        <nav aria-label="Navegación de pie de página">
+    <footer class="site-footer">
+        <nav class="footer-nav" aria-label="Navegación de pie de página">
             <ul>
                 <li><a href="#contenido-principal">Volver arriba</a></li>
                 <li><a href="#contacto">Ir a Contacto</a></li>
