@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Wara Alexandra Tipola Beltrán</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        (function () {
+            try {
+                var temaGuardado = localStorage.getItem('tema');
+                var prefiereOscuro = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.setAttribute('data-tema', temaGuardado || (prefiereOscuro ? 'oscuro' : 'claro'));
+            } catch (error) {
+                document.documentElement.setAttribute('data-tema', 'claro');
+            }
+        })();
+    </script>
+</head>
+<body>
+
+    <a href="#contenido-principal" aria-label="Saltar al contenido principal">Saltar al contenido principal</a>
+
+    <header class="site-header">
+        <div class="site-header__identity">
+            <img class="avatar" src="assets/images/foto_wara01.jpg" alt="foto personal">
+
+            <div class="site-header__text">
+                <h1>WARA ALEXANDRA TIPOLA BELTRAN</h1>
+                <p class="role">Estudiante de Ingeniería de Sistemas</p>
+
+                <address>
+                    Alto Obrajes calle Jorge Rouma, La Paz, Bolivia<br>
+                    <a href="mailto:wtipola@gmail.com">wtipola@gmail.com</a><br>
+                    <a href="tel:+59168008601">+591 68008601</a>
+                </address>
+
+            </div>
+            <button type="button" id="boton-tema" class="theme-toggle" aria-pressed="false" aria-label="Cambiar entre modo claro y modo oscuro">
+                <span class="theme-toggle__icono" aria-hidden="true">🌙</span>
+                <span class="theme-toggle__texto">Modo oscuro</span>
+            </button>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Perfil Profesional</a></li>
+                <li><a href="educacion.html">Formación Académica</a></li>
+                <li><a href="experiencia.html">Experiencia Profesional</a></li>
+                <li><a href="habilidades_certificaciones.html">Habilidades y Certificaciones</a></li>
+                <li><a href="idiomas.html">Idiomas</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido-principal">
+        <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+
+        <article class="project-card">
+        <h3>Sistema de Gestión de Billetera Digital</h3>
+        <p><strong>Descripción:</strong> Desarrollo de una aplicación de escritorio interactiva con interfaz gráfica (GUI) que simula el funcionamiento de una cuenta financiera personal, permitiendo la gestión de saldo, depósitos, retiros y transferencias entre usuarios con persistencia de datos en archivos binarios (.dat).</p>
+        <p><strong>Tecnologías utilizadas:</strong> C++, Dear ImGui, g++ (MinGW-w64), Git, GitHub.</p>
+        <p><strong>Rol desempeñado:</strong> Desarrollo de la lógica de negocio, autenticación de usuarios, operaciones CRUD y actualización de saldo.</p>
+        <p><strong>Resultado obtenido:</strong> Aplicación de escritorio funcional, ejecutable de forma portable y con una interfaz reactiva y amigable que supera el uso tradicional de consola.</p>
+        <p>
+            <label for="progreso-billetera">Estado de finalización del proyecto:</label>
+            <progress id="progreso-billetera" max="100" value="100">100% Finalizado</progress>
+        </p>
+        
+        </article>
+
+        <article class="project-card">
+        <h3>Sistema Web para Venta y Compra de Proyectos Inmobiliarios</h3>
+        <p><strong>Descripción:</strong> Plataforma web orientada a la difusión y comercialización de proyectos inmobiliarios en Bolivia, facilitando la publicación de inmuebles por parte de empresas y PYMES, así como la consulta y guardado de publicaciones por parte de clientes e inversores.</p>
+        <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, JavaScript, PHP, MySQL.</p>
+        <p><strong>Rol desempeñado:</strong> Análisis, diseño e implementación del sistema web bajo metodología en cascada (Waterfall), diseño de base de datos relacional y desarrollo del módulo de publicaciones.</p>
+        <p><strong>Resultado obtenido:</strong> Plataforma accesible e interactiva alojada en servidor de pruebas que optimiza la visibilidad de ofertas inmobiliarias y mejora la interacción cliente-vendedor.</p>
+        <p>
+            <label for="progreso-inmobiliario">Estado de finalización del proyecto:</label>
+            <progress id="progreso-inmobiliario" max="100" value="100">100% Finalizado</progress>
+        </p>
+        
+        </article>
+        </section>
+
+        <section id="multimedia">
+            <h2>Portafolio Multimedia</h2>
+
+            <div class="media-grid">
+            <figure class="media-item">
+                <img src="assets/images/Imagen1.jpg" alt="captura de pantalla" width="700px">
+                <figcaption>Figura 1: Captura de pantalla de la interfaz del proyecto URBANOVA.</figcaption>
+            </figure>
+
+            <figure class="media-item">
+                <figcaption>Audio de presentación personal y resumen profesional:</figcaption>
+                <audio controls>
+                    <source src="assets/audio/Presentación_cv.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio HTML5.
+                </audio>
+            </figure>
+
+            <figure class="media-item">
+                <figcaption>Video demostrativo de la plataforma de banco en C++</figcaption>
+                <video controls width="640" height="360">
+                    <source src="assets/video/Banco_modular.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video HTML5.
+                </video>
+            </figure>
+            </div>
+        </section>
+
+        <script src="js/modo-oscuro.js" defer></script>
+    </main>
+        <footer class="site-footer">
+        <nav class="footer-nav" aria-label="Navegación de pie de página">
+            <ul>
+                <li><a href="#contenido-principal">Volver arriba</a></li>
+                <li><a href="contacto.html">Ir a Contacto</a></li>
+            </ul>
+        </nav>
+        <p><small>&copy; 2026 Wara Alexandra Tipola Beltrán</small></p>
+        </footer>
+    </body>
+    </html>

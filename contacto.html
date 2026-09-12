@@ -57,31 +57,59 @@
         </nav>
     </header>
 
-    <aside class="sidebar">
-        <h2>INFORMACION GENERAL</h2>
-        <p><small>Documento de Identidad: 9972146 LP</small></p>
-        <p><small>Disponibilidad: Inmediata</small></p>
-    </aside>
-
     <main id="contenido-principal">
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form class="contact-form" action="#" method="post">
+                <fieldset>
+                    <legend>Formulario de mensaje</legend>
 
-        <section id="perfil">
-            <h2>Perfil Profesional</h2>
-            <p>
-                <strong>Estudiante de Ingeniería de Sistemas</strong> con un alto compromiso, <em>adaptabilidad y rápido aprendizaje</em>. En busca de una oportunidad laboral que me permita desarrollarme profesionalmente, ofrecer un <mark>trato respetuoso y eficiente al cliente</mark>, y contribuir con responsabilidad y buena disposición al trabajo en equipo en distintos entornos laborales.
-            </p>
-            <p>
-                Mis principales fortalezas residen en la <strong>comunicación efectiva</strong>, la resolución de consultas técnicas y la capacidad para explicar conceptos a audiencias no técnicas.
-            </p>
-            <p>
-                <strong>Objetivo profesional:</strong> Desempeñarme con excelencia en funciones técnicas, académicas o de servicio al cliente, aplicando habilidades interpersonales y de gestión para responder con precisión a las necesidades de la institución y sus usuarios.
-            </p>
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required minlength="3" maxlength="60">
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    </p>
+
+                    <p>
+                        <label for="telefono">Teléfono de contacto:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 68008601" pattern="[0-9]{8,15}" required>
+                    </p>
+
+                    <p>
+                        <label for="motivo">Motivo de contacto:</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="">-- Seleccione una opción --</option>
+                            <option value="oferta-laboral">Oferta laboral</option>
+                            <option value="servicio-cliente">Atención o Ventas</option>
+                            <option value="consulta-academica">Consulta académica</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escriba su mensaje aquí..." required minlength="10" maxlength="500"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">Acepto los términos para el procesamiento de mis datos de contacto.</label>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpiar</button>
+                    </p>
+                </fieldset>
+            </form>
         </section>
 
         <script src="js/modo-oscuro.js" defer></script>
-
     </main>
-
     <footer class="site-footer">
         <nav class="footer-nav" aria-label="Navegación de pie de página">
             <ul>
@@ -90,7 +118,6 @@
             </ul>
         </nav>
         <p><small>&copy; 2026 Wara Alexandra Tipola Beltrán</small></p>
-    </footer>
-
-</body>
-</html>
+        </footer>
+    </body>
+    </html>
